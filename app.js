@@ -32,5 +32,5 @@ app.get('/', (req, res) => {
     });
 });
 app.listen(port, function() {
-    console.log('Gif search on port localhost: 3000!');
+    console.log(`Gif search on port localhost: ${port}!`);
 });
