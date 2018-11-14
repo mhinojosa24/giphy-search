@@ -4,7 +4,7 @@ var exphbs = require('express-handlebars');
 var http = require('http');
 var giphy = require('giphy-api')();
 var path = require('path')
-
+var port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static('public'));
@@ -31,6 +31,6 @@ app.get('/', (req, res) => {
         });
     });
 });
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('Gif search on port localhost: 3000!');
 });
