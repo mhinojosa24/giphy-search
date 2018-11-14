@@ -8,9 +8,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "mocha",
-    "postinstall": "bower cache clean && bower install && grunt build"
+    "start": "node app.js",
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
