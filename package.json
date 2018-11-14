@@ -9,7 +9,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha"
+    "test": "mocha",
+    "postinstall": "bower cache clean && bower install && grunt build"
   },
   "author": "",
   "license": "ISC",
